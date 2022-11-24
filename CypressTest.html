@@ -1,0 +1,22 @@
+
+<html>
+<head>Web Page</head>
+
+<body><h1>Creation Courriel par page web</h1>
+
+<p>Nom du message:&nbsp;[[=Message.MessageName;]]</p>
+&nbsp;
+
+<p>ID: [[=Contact.idContact;]]</p>
+&nbsp;
+
+<p>Email: [[=Contact.f_EMail;]]</p>
+&nbsp;
+
+<p>Tests autos: z_others /dev / happy_path /5_dev_create_send_email_qa_sans_email_key.js</p>
+<a href="[[=Message.Optout("fr-CA");]]">D&eacute;sabonne-moi</a><br />
+<br />
+[[if(Config.isShowMessage == 0 && Config.hasTrackingConsent == 1){]]<a href="[[=Message.WebVersion(true);]]">Voici lien version web</a>[[}]]<br />
+[[=Message.ReadTag();]]</body>
+</html>
+
